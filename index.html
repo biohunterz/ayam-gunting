@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text"> to : Kakak Salma yang cantik bak bidadari </h1>
+                <h1 class = "header_text">Kakak maghoh ke saya ngorat salma? </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/l1J9u3TZfpmeDLkD6/giphy.gif?cid=790b7611p2sdbrn6cevqf63px30k0d43idtsy09tix1ici88&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Tak maghoh pun  </button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Maghoh angatt </button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
